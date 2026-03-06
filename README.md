@@ -20,7 +20,7 @@ Accurately predicting this dependency 24 hours in advance allows grid operators 
 The associated Power BI dashboard provides a detailed breakdown of grid performance and forecasting accuracy.
 
 ### 1. Day-Ahead Backtest (Performance & Financial Impact)
-![Page 1 - July 31st Backtest](images/dashboard_backtest.png)
+![Page 1 - July 31st Backtest](dashboard_backtest.png)
 *   **Performance Insight**: This view shows the model following the actual Net Load curve throughout the day. Despite a small "visual" error between hours 15 and 18, the model maintains a strong overall MAPE of ~2.8%.
 *   **The "Cost of Error" Spike**: The bottom bar chart reveals the most critical insight: a 600 MW error at Hour 16 costs over $400k. This proves that **operational timing** is more important than raw MW accuracy. Missing a peak during high-price hours creates massive financial exposure for the grid.
 
