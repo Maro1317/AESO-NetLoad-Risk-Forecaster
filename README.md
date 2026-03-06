@@ -25,12 +25,12 @@ The associated Power BI dashboard provides a detailed breakdown of grid performa
 *   **The "Cost of Error" Spike**: The bottom bar chart reveals the most critical insight: a 600 MW error at Hour 16 costs over $400k. This proves that **operational timing** is more important than raw MW accuracy. Missing a peak during high-price hours creates massive financial exposure for the grid.
 
 ### 2. Market Sensitivity: Price vs. Net Load Correlation
-![Page 2 - Scatter Plot with Trend Line](images/price_correlation.png)
+![Page 2 - Scatter Plot with Trend Line](price_correlation.png)
 *   **Positive Correlation**: The scatter plot confirms a direct positive correlation between Net Load and Pool Price (indicated by the red trend line). As Net Load increases, the grid is forced to use more expensive "Peaker" gas plants, driving prices up.
 *   **Operational Risk**: The high density of dots in the 10k–12k MW range shows where the market becomes most volatile. Forecasting accuracy in this "high-stress" zone is the primary goal of the XGBoost model to prevent unhedged exposure to $500+/MWh prices.
 
 ### 3. The "Duck Curve" & Long-Term Trends
-![Page 3 - Hourly Profile by Month & 5-Year Trend](images/duck_curve.png)
+![Page 3 - Hourly Profile by Month & 5-Year Trend](duck_curve.png)
 *   **The Evolving Duck Curve**: The line chart shows the hourly average Net Load by month. The "belly" of the curve (midday) is sinking lower every year as more solar capacity is added to the Alberta grid.
 *   **The Ramp Risk**: The steep climb in Net Load between 5 PM and 9 PM (the "neck" of the duck) represents the highest risk period for natural gas generators. They must ramp up several thousand MWs in just a few hours as solar disappears, making accurate day-ahead forecasting essential for grid stability.
 
